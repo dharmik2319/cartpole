@@ -60,6 +60,13 @@ torch.save(model.state_dict(), "./cart-stable.pt")
 env = gym.make("CartPole-v1")
 ```
 
+- (Optional) And modify 50000 to any other number, (the steps till which you want an episode to last)
+```python
+for t in range(1, 50000):
+```
+***WARNING***: A higher number means more resource usage, so be careful and realistic when modifying it
+
+- And last, you can modify other parameters like the learning rate and the optimizer, and the number of layers and neurons.
 # Limitations
 
 - Due to my limited `pygame` knowledge, and the way I implemented the scoring system, you cannot play a playable version of cartpole anymore, because it requires you to use `rgb-array` as rendering mode.
@@ -67,3 +74,10 @@ env = gym.make("CartPole-v1")
 - The model can probably be much better, but due to time and computational constraints, I have not made it better.
 
 - You are welcome to create a pull request to submit a more trained model, or to submit better, more documented code.
+
+- This NN runs on a single core (and a single thread, I think). Making it multi-core would make performance skyrocket.
+
+# Credits
+- The template code was taken from `pytorch`'s examples.
+
+- The `gymnasium` library which contains many environments useful for RL beginners.
