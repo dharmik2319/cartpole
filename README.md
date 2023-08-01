@@ -91,7 +91,7 @@ for t in range(1, 50000):
 
 - Due to lack of support from the `gymnasium` library, you cannot run any environment with visuals (GUI) on Windows systems.
 
-- But, you can follow the steps for [GNU/Linux](#GNU/Linux) and train the NN and also see its score in the CLI.
+- But, you can follow the steps for [GNU/Linux](#gnulinux) and train the NN and also see its score in the CLI.
 
 # Limitations
 
