@@ -6,6 +6,7 @@ Cartpole
 
 - [My Solution](#my-solution)
 - [My Modifications](#my-modifications)
+- [Screenshots](#screenshots)
 - [How to train/use](#how-to-trainuse)
   * [GNU/Linux](#gnulinux)
   * [Windows](#windows)
@@ -29,6 +30,13 @@ Cartpole
 - It now has, in `human` rendering mode, a score counter, which just displays a modified version of the number of steps in an episode.
 - I also heavily modified the scoring system. Using the default module, it took many more generations for the NN to become stable, compared to my mod. In my modified version, I made it so that the NN gets a negative reward for every episode for every unit that it strays farther from the center, in the X plane.
 - This strict rewarding system made the NN play cartpole in a far more stable way.
+
+# Screenshots
+![1](img/1.png)
+
+![2](img/2.png)
+
+- As you can see in the images above, I have added a red indicator of the move of the NN and also the score.
 
 # How to train/use
 
